@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>An Open Window</title>
+	<style>
+		
+		.title {padding-top: 19.5px; 
+			font-family: "myFirstFont";
+			font-size: 35px;
+			text-align: center;
+			font-style: regular;
+			color: rgb(255,99,71);
+		}
+@font-face{
+	font-family: myFirstFont;
+			src: url("goblinone.ttf");
+		}
+
+		.door { height: auto;
+				width: auto;
+				left: 20%;
+				top: 50%;
+				position: absolute;
+		}
+
+		.window { height: auto;
+				width: auto;
+				left: 60%;
+				top: 9%;
+				position: fixed;
+		}
+
+#closed:hover {
+        transform: scale(1.5);
+    }
+
+    #open:hover {
+        /*transform: scale(1.5);*/
+        content: url("sealed.png");
+
+    }
+  #text:hover {
+        transform: translate(27%,0);
+        transition: all .3s ease-in-out;
+    }
+
+
+
+	</style>
+	
+</head>
+<body style="background-color: rgb(255,203,164);">
+
+<div class = "title" id="text">
+
+<p>Close The door</p>
+
+<br>
+
+<p style="font-size:20px">Open </p>
+<p style="font-size:20px">The </p>
+<p style="font-size:20px">Window</p>
+
+</div>
+
+<div class = "door">
+	<img id="closed" src ="door.png" width="560px" height="350px"/>
+</div>
+
+<div class = "window">
+	<a href="page 2.html">
+	<img id="open"src ="open.png" width="560px" height="350px"/>
+</a>
+
+</div>
+
+
+</body>
+</html>
